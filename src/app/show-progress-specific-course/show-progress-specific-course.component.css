@@ -1,0 +1,90 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Fullscreen Wrapper for Course Details */
+  .course-details-container {
+    width: 100%;
+    min-height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Remove extra padding */
+    overflow-x: hidden; /* Hide horizontal scroll for small screens */
+    text-align: center; /* Center content */
+  }
+  
+  /* Heading Styling for Course Details */
+  .course-details-container h2 {
+    font-size: 32px;
+    color: #fff; /* White color for the heading */
+    font-weight: bold;
+    margin-bottom: 30px; /* Adds spacing between heading and table */
+    padding: 10px 0; /* Add padding for extra space around the heading */
+    background-color: rgba(0, 0, 0, 0.3); /* Optional: Dark semi-transparent background */
+    border-radius: 5px; /* Smooth edges for the background */
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Table Styling */
+  .course-details-container table {
+    width: 100%;
+    max-width: 900px; /* Limit the table's width */
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Ensure rounded corners for the table */
+  }
+  
+  /* Table Header Styling */
+  .course-details-container th {
+    background-color: #42a5f5; /* Blue header background */
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  /* Table Data Styling */
+  .course-details-container td {
+    padding: 12px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  /* Hover Effect for Rows */
+  .course-details-container tbody tr:hover {
+    background-color: #f1f1f1; /* Light grey background on row hover */
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .course-details-container h2 {
+      font-size: 28px; /* Slightly smaller heading on mobile */
+    }
+  
+    .course-details-container table {
+      width: 100%; /* Ensure table takes full width on mobile */
+      font-size: 14px; /* Smaller font size for smaller screens */
+    }
+  
+    .course-details-container th,
+    .course-details-container td {
+      padding: 8px; /* Adjust padding for smaller screens */
+    }
+  }
+  

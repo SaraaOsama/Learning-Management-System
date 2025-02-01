@@ -1,0 +1,150 @@
+/* General form container styling */
+.all {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient background */
+  font-family: 'Arial', sans-serif;
+}
+
+form {
+  width: 100%;
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for form */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form title */
+h2 {
+  text-align: center;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+  display: block;
+  text-align: left;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures padding is included in width */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect for input fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: #4caf50; /* Green border on focus */
+  outline: none;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+/* Dropdown (select) specific styles */
+select {
+  appearance: none; /* Removes default dropdown arrow styling */
+  background-color: #f9f9f9;
+  padding: 12px;
+  font-size: 16px;
+}
+
+select:focus {
+  background-color: #fff;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Error and Success Messages */
+p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+p.errorMessage {
+  color: red;
+}
+
+p.successMessage {
+  color: green;
+}
+
+/* Login Link Styling */
+.register-link {
+  color: #3498db; /* Blue color for the link */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.register-link:hover {
+  color: #8e44ad; /* Purple hover effect */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Optional: Add a subtle background gradient for body */
+body {
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select,
+  button {
+    font-size: 14px;
+  }
+}

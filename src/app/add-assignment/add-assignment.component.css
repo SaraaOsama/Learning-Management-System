@@ -1,0 +1,118 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Fullscreen Wrapper */
+.add-assignment-container {
+  width: 100%;
+  min-height: 100vh; /* Full viewport height */
+  background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Remove extra padding */
+  overflow-x: hidden; /* Hide horizontal scroll for small screens */
+  flex-direction: column; /* Ensure content is stacked vertically */
+}
+
+/* Heading Section Styling */
+.add-assignment-container h2 {
+  font-size: 32px;
+  color: #fff; /* White color to make it stand out against the background */
+  font-weight: bold;
+  margin-bottom: 30px; /* Adds spacing between heading and form */
+  text-align: center; /* Center-align the heading */
+  padding: 10px 0; /* Add padding for extra space around the heading */
+  background-color: rgba(0, 0, 0, 0.3); /* Optional: Dark semi-transparent background */
+  border-radius: 5px; /* Smooth edges for the background */
+  width: 100%; /* Make the heading take the full width */
+  max-width: 600px; /* Limit the width */
+}
+
+/* Form Container Styling */
+.add-assignment-container form {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Limits the form's width */
+  text-align: center; /* Centers text inside the form */
+  box-sizing: border-box;
+}
+
+/* Success Message Styling */
+.add-assignment-container .alert {
+  color: #42a5f5;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Label Styling */
+.add-assignment-container label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: left; /* Align labels to the left */
+}
+
+/* Input and Select Styling */
+.add-assignment-container input[type="text"],
+.add-assignment-container select {
+  width: 100%; /* Full width input fields */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Button Styling */
+.add-assignment-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #42a5f5; /* Blue button background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-assignment-container button:hover {
+  background-color: #1e88e5; /* Slightly darker blue on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.add-assignment-container button:active {
+  transform: scale(0.95);
+}
+
+/* Display selected course name */
+.add-assignment-container p {
+  color: #333;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .add-assignment-container {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .add-assignment-container button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}

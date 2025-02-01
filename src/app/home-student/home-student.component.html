@@ -1,0 +1,17 @@
+<!-- <div class="courses">
+    <h2>All Courses</h2>
+    <ul>
+      <li *ngFor="let course of courses">
+        <a [routerLink]="'/courses'">{{ course.course_name }}</a>
+      </li>
+    </ul>
+  </div>
+ -->
+ <div class="courses">
+  <h2>All Courses</h2>
+  <ul>
+    <li *ngFor="let course of courses">
+      <a [routerLink]="['/courses', course.id_course , this.user_id]">{{ course.course_name }}</a>
+    </li>
+  </ul>
+</div>

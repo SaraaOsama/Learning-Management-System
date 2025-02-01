@@ -1,0 +1,34 @@
+<div class="manage-courses">
+  <h2>Manage Courses</h2>
+  <input [(ngModel)]="newCourse.course_name" placeholder="Course Name">
+  <button (click)="addCourse()">Add Course</button>
+
+  <ul>
+    <li *ngFor="let course of courses">
+      <div *ngIf="editCourse?.id_course === course.id_course; else viewMode">
+        <input [(ngModel)]="editCourse!.course_name" placeholder="Edit Course Name">
+        <button (click)="updateCourse()">Save</button>
+        <button (click)="cancelEdit()">Cancel</button>
+      </div>
+      <ng-template #viewMode>
+        <span>{{ course.course_name }}</span>
+        <button (click)="enableEdit(course)">Edit</button>
+        <button (click)="deleteCourse(course.id!)">Delete</button>
+        <button (click)="archieveCourse(course.id!)">Archieve</button>
+        <button (click)="unarchieveCourse(course.id!)">UnArvhieve</button>
+      </ng-template>
+    </li>
+  </ul>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <button (click)="navigateToAddAssignment()">Add assignments</button>
+  <button (click)="navigateToAddMaterial()">Add Material</button>
+  <button (click)="showProgress()">Show progress</button>
+</div>
+

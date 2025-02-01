@@ -1,0 +1,35 @@
+<div class="course-details">
+  <h2>Course Details</h2>
+
+  <h3>Materials</h3>
+  <ul>
+    <li *ngFor="let material of materials">
+      <a [href]="material.materials" target="_blank">View Material</a>
+    </li>
+  </ul>
+
+  <h3>Assignments</h3>
+  <div *ngFor="let arr of combinedArray">
+    <form (submit)="submitAnswer(arr, $event)">
+      <div>
+        <label>{{ arr.assignment }}</label>
+        <input
+          type="text"
+          [(ngModel)]="arr.answearOfStudent"
+          name="answer_{{ arr.id_assignment }}"
+          required
+          [disabled]="arr.grade != null"
+        />
+        <button type="submit" [disabled]="arr.grade != null">Submit</button>
+        <label *ngIf="arr.grade == 1;">Correct Answer</label>
+        <label *ngIf="arr.grade == 0;">Wrong Answer, and the correct answer is {{ arr.answear }}</label>
+      </div>
+    </form>
+  </div>
+
+  <h3>Progress Tracking</h3>
+  
+
+  <h3 *ngIf="allAnswered">Your Grade: {{ gradePercentage | number: '1.0-2' }}%</h3>
+  <h3 *ngIf="!allAnswered">Progress: {{ gradePercentage | number: '1.0-2' }}%</h3>
+</div>

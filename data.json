@@ -1,0 +1,541 @@
+{
+  "users": [
+    {
+      "id_user": 1,
+      "userName": "mina",
+      "email": "mina@gmail.com",
+      "password": "123",
+      "active": 1,
+      "role": 0,
+      "approve": 1,
+      "id": "74dc"
+    },
+    {
+      "id_user": 2,
+      "userName": "nashaat",
+      "email": "nashaat@gmail.com",
+      "password": "123",
+      "active": 1,
+      "role": 1,
+      "approve": 1,
+      "id": "381f"
+    },
+    {
+      "id_user": 3,
+      "userName": "ayoub",
+      "email": "ayoub@gmail.com",
+      "password": "123",
+      "active": 1,
+      "role": 1,
+      "approve": 0,
+      "id": "3eaa"
+    },
+    {
+      "id": "f408",
+      "userName": "mina",
+      "email": "menanashat987dddd@gmail.com",
+      "password": "ddd",
+      "role": 0,
+      "active": 1,
+      "approve": 1,
+      "id_user": 4
+    },
+    {
+      "id": "f90e",
+      "userName": "mina nashaat",
+      "email": "minanashaat@gmail.com",
+      "password": "123",
+      "role": 0,
+      "active": 1,
+      "approve": 1,
+      "id_user": 5
+    },
+    {
+      "id": "6bcc",
+      "userName": "mina",
+      "email": "minaa@gmail.com",
+      "password": "123",
+      "role": 0,
+      "active": 1,
+      "approve": 1,
+      "id_user": 6
+    },
+    {
+      "id": "2c2f",
+      "userName": "minaNashaat",
+      "email": "menanashat987@gmail.com",
+      "password": "qqq",
+      "role": 0,
+      "active": 0,
+      "approve": 0,
+      "id_user": 7
+    },
+    {
+      "id": "6e28",
+      "userName": "mina",
+      "email": "menanashat9876@gmail.com",
+      "password": "123",
+      "role": 0,
+      "active": 1,
+      "approve": 1,
+      "id_user": 8
+    },
+    {
+      "id": "50db",
+      "userName": "mina",
+      "email": "nashaat2@gmail.com",
+      "password": "123",
+      "role": "1",
+      "active": 0,
+      "approve": 0,
+      "id_user": 9
+    }
+  ],
+  "courses": [
+    {
+      "id_course": 1,
+      "course_name": "OS",
+      "id": "3581",
+      "archieve": 0
+    },
+    {
+      "id_course": 2,
+      "course_name": "Algo",
+      "id": "ebb1",
+      "archieve": 0
+    },
+    {
+      "id_course": 3,
+      "course_name": "Data structure",
+      "id": "7a7c",
+      "archieve": 0
+    },
+    {
+      "id_course": 4,
+      "id": "1d47",
+      "course_name": "CNN",
+      "archieve": 0
+    },
+    {
+      "id": "7895",
+      "id_course": 5,
+      "course_name": "Data Science",
+      "archieve": 0
+    },
+    {
+      "id": "8e40",
+      "id_course": 6,
+      "course_name": "mina nashaat",
+      "archieve": 0
+    }
+  ],
+  "user_course": [
+    {
+      "id_user": 2,
+      "id_course": 2,
+      "id": "77cb"
+    },
+    {
+      "id_user": 3,
+      "id_course": 3,
+      "id": "1d9e"
+    },
+    {
+      "id": "uc17ne",
+      "id_user": 1,
+      "id_course": 1
+    },
+    {
+      "id": "81eb3i",
+      "id_user": 1,
+      "id_course": 2
+    },
+    {
+      "id": "5k8mhf",
+      "id_user": 4,
+      "id_course": 1
+    },
+    {
+      "id": "vxcm4p",
+      "id_user": 4,
+      "id_course": 2
+    },
+    {
+      "id": "re4kgd",
+      "id_user": 4,
+      "id_course": 3
+    },
+    {
+      "id": "j5j766",
+      "id_user": 5,
+      "id_course": 1
+    },
+    {
+      "id": "9od7x9",
+      "id_user": 5,
+      "id_course": 2
+    },
+    {
+      "id": "9ziw8j",
+      "id_user": 5,
+      "id_course": 3
+    },
+    {
+      "id": "1u24nb",
+      "id_user": 5,
+      "id_course": 4
+    },
+    {
+      "id": "4wzqq2",
+      "id_user": 5,
+      "id_course": 5
+    },
+    {
+      "id": "94icck",
+      "id_user": 0,
+      "id_course": 3
+    },
+    {
+      "id": "w2xyxy",
+      "id_user": 0,
+      "id_course": 1
+    },
+    {
+      "id": "fdcf81",
+      "id_user": 0,
+      "id_course": 2
+    },
+    {
+      "id": "p7bx4m",
+      "id_user": 6,
+      "id_course": 2
+    },
+    {
+      "id": "7htp34",
+      "id_user": 6,
+      "id_course": 3
+    },
+    {
+      "id": "d9wjc1",
+      "id_user": 6,
+      "id_course": 1
+    },
+    {
+      "id": "s7en0w",
+      "id_user": 8,
+      "id_course": 1
+    },
+    {
+      "id": "tbma4s",
+      "id_user": 8,
+      "id_course": 2
+    },
+    {
+      "id": "ln0mzn",
+      "id_user": 8,
+      "id_course": 3
+    },
+    {
+      "id": "zsdc55",
+      "id_user": 8,
+      "id_course": 4
+    },
+    {
+      "id": "37n7q9",
+      "id_user": 8,
+      "id_course": 5
+    }
+  ],
+  "materials": [
+    {
+      "id_course": 1,
+      "materials": "https://www.youtube.com/watch?v=Ck9QwisSvdo&list=PLgU7izgeR2lwwNRNY4fYQf3GZawV-EGnW",
+      "id": "cd8c"
+    },
+    {
+      "id_course": 1,
+      "materials": "https://www.youtube.com/watch?v=NyNLJ17oX50&list=PLT0Ek_HGT21nDaUZkxZnP0nqsbCzuNXeW",
+      "id": "6b81"
+    },
+    {
+      "id_course": 1,
+      "materials": "https://www.youtube.com/watch?v=DSibq5YiFp4&list=PLesfn4TAj57WJFn86KXOInQAsCdJlp6vl",
+      "id": "e6e1"
+    },
+    {
+      "id_course": 2,
+      "materials": "https://www.youtube.com/watch?v=Bzzp0q0T5oM&list=PLQtNtS-WfRa8OF9juY3k6WUWayMfDKHK2",
+      "id": "9d62"
+    },
+    {
+      "id_course": 2,
+      "materials": "https://www.youtube.com/watch?v=2jbaDlQqcoY&list=PLGhZWewM_75LQf3KvHo6HHSclmDyDazl7",
+      "id": "e3f9"
+    },
+    {
+      "id_course": 2,
+      "materials": "https://www.youtube.com/watch?v=YJNQpr5muek&list=PLDQ11FgmbqQNFuGQTKbAIGEyOKWUGBs6i",
+      "id": "1e47"
+    },
+    {
+      "id_course": 3,
+      "materials": "https://www.youtube.com/watch?v=ihRRf3EjTV8&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS",
+      "id": "9735"
+    },
+    {
+      "id_course": 3,
+      "materials": "https://www.youtube.com/watch?v=EtNyJQItRZk&list=PLpr1Lg_f0v3ojNKR4WzZ_SEXhiKBHDQmB",
+      "id": "a18e"
+    },
+    {
+      "id_course": 3,
+      "materials": "https://www.youtube.com/watch?v=CgkZ7MvWUAA&pp=ygUMcmVhY3QgY291cnNl",
+      "id": "d8d7"
+    }
+  ],
+  "assignment": [
+    {
+      "id_course": 1,
+      "id_assignment": 1,
+      "assignment": "question of course 1 assignment 1 ",
+      "answear": "11",
+      "id": "53fb"
+    },
+    {
+      "id_course": 1,
+      "id_assignment": 2,
+      "assignment": "question of course 1 assignment 2 ",
+      "answear": "12",
+      "id": "1f45"
+    },
+    {
+      "id_course": 1,
+      "id_assignment": 3,
+      "assignment": "question of course 1 assignment 3 ",
+      "answear": "13",
+      "id": "3873"
+    },
+    {
+      "id_course": 2,
+      "id_assignment": 1,
+      "assignment": "question of course 2 assignment 1 ?",
+      "answear": "21",
+      "id": "b9ac"
+    },
+    {
+      "id_course": 2,
+      "id_assignment": 2,
+      "assignment": "question of course 2 assignment 2 ?",
+      "answear": "22",
+      "id": "c9e2"
+    },
+    {
+      "id_course": 2,
+      "id_assignment": 3,
+      "assignment": "question of course 2 assignment 3 ?",
+      "answear": "23",
+      "id": "713a"
+    },
+    {
+      "id_course": 3,
+      "id_assignment": 1,
+      "assignment": "question of course 3 assignment 1 ?",
+      "answear": "31",
+      "id": "e959"
+    },
+    {
+      "id_course": 3,
+      "id_assignment": 2,
+      "assignment": "question of course 3 assignment 2 ?",
+      "answear": "32",
+      "id": "72ba"
+    },
+    {
+      "id_course": 3,
+      "id_assignment": 3,
+      "assignment": "question of course 3 assignment 3 ?",
+      "answear": "33",
+      "id": "ab65"
+    },
+    {
+      "id": "44a8",
+      "id_course": 1,
+      "id_assignment": 5,
+      "assignment": "what is my name",
+      "answear": "mina nashaat"
+    },
+    {
+      "id": "976e",
+      "id_course": 4,
+      "id_assignment": 1,
+      "assignment": "what is my name",
+      "answear": "mina nashaat"
+    },
+    {
+      "id": "f163",
+      "id_course": 4,
+      "id_assignment": 2,
+      "assignment": "what is my second name",
+      "answear": "nashaat"
+    },
+    {
+      "id": "5a3e",
+      "id_course": 5,
+      "id_assignment": 1,
+      "assignment": "data",
+      "answear": "data"
+    },
+    {
+      "id": "654b",
+      "id_course": 5,
+      "id_assignment": 2,
+      "assignment": "data2",
+      "answear": "data2"
+    },
+    {
+      "id": "2334",
+      "id_course": 5,
+      "id_assignment": 3,
+      "assignment": "data3",
+      "answear": "data3"
+    }
+  ],
+  "grades": [
+    {
+      "id": "d346",
+      "id_user": 1,
+      "id_course": 1,
+      "id_assignment": 1,
+      "answearOfStudent": "11",
+      "grade": 1
+    },
+    {
+      "id": "c186",
+      "id_user": 1,
+      "id_course": 1,
+      "id_assignment": 2,
+      "answearOfStudent": "11",
+      "grade": 0
+    },
+    {
+      "id": "be97",
+      "id_user": 1,
+      "id_course": 1,
+      "id_assignment": 3,
+      "answearOfStudent": "13",
+      "grade": 1
+    },
+    {
+      "id": "6657",
+      "id_user": 1,
+      "id_course": 1,
+      "id_assignment": 4,
+      "answearOfStudent": "mina nashaat",
+      "grade": 0
+    },
+    {
+      "id": "c36c",
+      "id_user": 1,
+      "id_course": 1,
+      "id_assignment": 5,
+      "answearOfStudent": "mina nashaat",
+      "grade": 1
+    },
+    {
+      "id": "a002",
+      "id_user": 5,
+      "id_course": 3,
+      "id_assignment": 1,
+      "answearOfStudent": "31",
+      "grade": 1
+    },
+    {
+      "id": "781e",
+      "id_user": 5,
+      "id_course": 3,
+      "id_assignment": 3,
+      "answearOfStudent": "11",
+      "grade": 0
+    },
+    {
+      "id": "9a50",
+      "id_user": 5,
+      "id_course": 2,
+      "id_assignment": 1,
+      "answearOfStudent": "21",
+      "grade": 1
+    },
+    {
+      "id": "f949",
+      "id_user": 5,
+      "id_course": 4,
+      "id_assignment": 1,
+      "answearOfStudent": "mina nashaat",
+      "grade": 1
+    },
+    {
+      "id": "ceeb",
+      "id_user": 5,
+      "id_course": 4,
+      "id_assignment": 2,
+      "answearOfStudent": "0",
+      "grade": 0
+    },
+    {
+      "id": "387d",
+      "id_user": 5,
+      "id_course": 5,
+      "id_assignment": 1,
+      "answearOfStudent": "data",
+      "grade": 1
+    },
+    {
+      "id": "f380",
+      "id_user": 5,
+      "id_course": 5,
+      "id_assignment": 2,
+      "answearOfStudent": "r",
+      "grade": 0
+    },
+    {
+      "id": "5535",
+      "id_user": 5,
+      "id_course": 5,
+      "id_assignment": 3,
+      "answearOfStudent": "data3",
+      "grade": 1
+    },
+    {
+      "id": "127d",
+      "id_user": 8,
+      "id_course": 1,
+      "id_assignment": 1,
+      "answearOfStudent": "11",
+      "grade": 1
+    },
+    {
+      "id": "60f3",
+      "id_user": 8,
+      "id_course": 1,
+      "id_assignment": 2,
+      "answearOfStudent": "12",
+      "grade": 1
+    },
+    {
+      "id": "8fa7",
+      "id_user": 8,
+      "id_course": 1,
+      "id_assignment": 3,
+      "answearOfStudent": "12",
+      "grade": 0
+    },
+    {
+      "id": "b6cf",
+      "id_user": 8,
+      "id_course": 1,
+      "id_assignment": 5,
+      "answearOfStudent": "mina nashaat",
+      "grade": 1
+    }
+  ]
+}

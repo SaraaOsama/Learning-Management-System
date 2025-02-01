@@ -1,0 +1,23 @@
+<div class="course-details-container">
+    <h2>Course Details for "{{ courseName }}"</h2>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th *ngFor="let assignment of assignments">
+            Assignment {{ assignment.id_assignment }}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of studentData">
+          <td>{{ this.getUserNameById(student.id_user) | uppercase}}</td>
+          <td *ngFor="let assignment of assignments">
+            {{ student.grades[assignment.id_assignment] }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,29 @@
+/* Center the buttons on the page */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient background */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Button styling */
+.navigate-button {
+  width: 200px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #42a5f5; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navigate-button:hover {
+  background-color: #1e88e5; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}

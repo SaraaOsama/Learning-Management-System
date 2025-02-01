@@ -1,0 +1,30 @@
+<form (submit)="addCourse()">
+    <label for="courseName">Course Name:</label>
+    <input type="text" id="courseName" [(ngModel)]="newCourseName" name="courseName" required />
+    <button type="submit">Add Course</button>
+  </form>
+  
+  <div *ngIf="message" class="message">{{ message }}</div>
+  
+  <div class="admin-courses">
+      <table  width="100%">
+        <thead>
+          <tr>
+            <th>Course Name</th>
+            <th>Archieve</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let course of Courses">
+            <td>{{ course.course_name }}</td>
+            <td>{{ course.archieve }}</td>
+            <td>
+              <button (click)="deleteCourse(course.id)">Delete</button>
+              <button (click)="archieveCourse(course.id)">Archieve</button>
+              <button (click)="unarchieveCourse(course.id)">Unarchieve</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    

@@ -1,0 +1,56 @@
+<div class="add-assignment-container">
+  <h2>Add New Assignment</h2>
+
+  <div *ngIf="successMessage" class="alert">
+    {{ successMessage }}
+  </div>
+
+  <form (ngSubmit)="addAssignment()">
+    <div>
+      <label for="question">Question</label>
+      <input
+        type="text"
+        id="question"
+        [(ngModel)]="newAssignment.assignment"
+        name="question"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="answers">Answers</label>
+      <input
+        type="text"
+        id="answers"
+        [(ngModel)]="newAssignment.answear"
+        name="answers"
+      />
+    </div>
+
+    <div>
+      <label for="course">Select Course</label>
+      <select
+        id="course"
+        [(ngModel)]="newAssignment.id_course"
+        name="course_id"
+        required
+      >
+        <option value="" disabled>Select a course</option>
+        <option *ngFor="let course of courses" [value]="course.id_course">
+          {{ course.course_name }}
+        </option>
+      </select>
+    </div>
+    
+
+    <div *ngIf="newAssignment.id_course">
+      <p>Selected Course: 
+        {{ getCourseName(newAssignment.id_course) }}
+      </p>
+    </div>
+
+    <div>
+      <button type="submit">Add Assignment</button>
+    </div>
+  </form>
+</div>

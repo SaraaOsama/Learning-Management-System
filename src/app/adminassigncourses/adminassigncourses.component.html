@@ -1,0 +1,23 @@
+<div class="user-container">
+  <h1>Users</h1>
+  <ul>
+    <li *ngFor="let user of users" (click)="openUserCourses(user.id_user)">
+      {{ user.userName }}
+    </li>
+  </ul>
+
+  <div *ngIf="selectedUserId !== null">
+    <h2>Courses for User {{ selectedUserId }}</h2>
+    <ul>
+      <li *ngFor="let course of courses">
+        <input
+          type="checkbox"
+          [checked]="selectedUserCourses.has(course.id_course)"
+          (change)="toggleCourseAssignment(course.id_course, $event)"
+        />
+        {{ course.course_name }}
+      </li>
+    </ul>
+    <button (click)="saveAssignments()">Save Changes</button>
+  </div>
+</div>
